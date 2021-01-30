@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="cart_div"> Корзина </div>
+            <div></div>
+        </div>
+        <div id="catalog"></div>
+    </div>
+    </div>
+</body>
+<style>
+    .main {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+        border-style: solid;
+    }
+
+    .empty_cart_div {
+        border-style: solid;
+        border-width: 0.25px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .cart_div {
+        padding: 10px;
+        border-style: solid;
+        border-width: 1px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .delete_button_div {
+        width: 25px;
+        height: auto;
+        background-color: red;
+        user-select: none;
+        color: white;
+        text-align: center;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    #catalog {
+        background-color: whitesmoke;
+        filter: drop-shadow(5px 5px 10px #666);
+    }
+
+    .goods_div {
+        padding: 10px;
+        border-style: solid;
+        border-width: 0.25px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .product_item {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px;
+        padding: 25px;
+        border: 1px;
+        border-style: solid;
+    }
+
+    .product_item_div {
+        padding: 10px;
+        border: 1px;
+        border-style: solid;
+        min-width: 150px;
+        text-align: center;
+    }
+
+    .name_div {
+        padding: 10px;
+        border: 1px;
+        border-style: solid;
+        min-width: 150px;
+        text-align: left;
+    }
+
+    .price_div {
+        padding: 10px;
+        border: 1px;
+        border-style: solid;
+        min-width: 80px;
+        text-align: right;
+    }
+
+    .descr_div {
+        padding: 10px;
+        border: 1px;
+        border-style: solid;
+        min-width: 150px;
+        text-align: center;
+
+    }
+
+    .button_tocart_div {
+        user-select: none;
+        background-color: antiquewhite;
+    }
+
+    .button_tocart_div:hover {
+        background-color: darkkhaki;
+    }
+
+    .button_tocart_div:active {
+        background-color: greenyellow;
+    }
+
+    .discount_button_div {
+        margin-top: 25px;
+        padding: 10px;
+        border: 1px;
+        border-style: solid;
+        width: max-content;
+        text-align: center;
+        font-size: 80%;
+        user-select: none;
+        background-color: antiquewhite;
+    }
+
+    .discount_button_div:hover {
+        background-color: darkkhaki;
+    }
+
+    .discount_button_div:active {
+        background-color: greenyellow;
+    }
+
+    .images_window_div {
+        position: absolute;
+        top: 20vh;
+        left: 1vw;
+        min-height: 50vh;
+        width: 45vw;
+        z-index: 3;
+        border: solid;
+        background-color: cornsilk;
+    }
+
+    ;
+</style>
+<script src="task1.js"></script>
+
+</html>
